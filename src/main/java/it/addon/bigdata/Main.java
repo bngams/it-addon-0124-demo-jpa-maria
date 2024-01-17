@@ -10,6 +10,5 @@ public class Main {
 
         FilmService filmService = new FilmService();
         filmService.findAllFilm();
-        filmService.findAllFilm();
     }
 }

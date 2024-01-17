@@ -7,11 +7,8 @@
     <list default="true" id="0249babf-3fc8-418e-819f-6f41be94b8fb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/datasource/HibernateClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/entities/Artiste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/data/entities/Artiste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/entities/Film.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/entities/Pays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/data/entities/Pays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/services/PaysService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/services/PaysService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/data/entities/Artiste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/data/entities/Artiste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/data/entities/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/addon/bigdata/data/entities/Film.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
