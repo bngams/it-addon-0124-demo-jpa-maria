@@ -1,4 +1,4 @@
-package it.addon.bigdata.entities;
+package it.addon.bigdata.data.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 @Entity
+@Table(name = "Film")
 public class Film {
 
     @Id
@@ -21,7 +22,7 @@ public class Film {
     @Column
     Integer annee;
 
-    @ManyToOne
-    @JoinColumn (name="code_pays")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="code_pays")
     Pays pays;
 }

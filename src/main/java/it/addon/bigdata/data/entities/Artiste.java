@@ -1,4 +1,4 @@
-package it.addon.bigdata.entities;
+package it.addon.bigdata.data.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

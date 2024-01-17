@@ -1,7 +1,8 @@
-package it.addon.bigdata.datasource;
+package it.addon.bigdata.data.datasource;
 
-import it.addon.bigdata.entities.Artiste;
-import it.addon.bigdata.entities.Pays;
+import it.addon.bigdata.data.entities.Artiste;
+import it.addon.bigdata.data.entities.Film;
+import it.addon.bigdata.data.entities.Pays;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -20,6 +21,7 @@ public class HibernateClient {
             sessionFactory = new MetadataSources(registry)
                     .addAnnotatedClass(Pays.class)
                     .addAnnotatedClass(Artiste.class)
+                    .addAnnotatedClass(Film.class)
                     .buildMetadata()
                     .buildSessionFactory();
         }

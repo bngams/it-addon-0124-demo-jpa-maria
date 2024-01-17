@@ -1,16 +1,14 @@
 package it.addon.bigdata.services;
 
-import it.addon.bigdata.datasource.HibernateClient;
-import it.addon.bigdata.entities.Pays;
+import it.addon.bigdata.data.datasource.HibernateClient;
+import it.addon.bigdata.data.entities.Pays;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
 
-public class PaysService {
-    private final SessionFactory sessionFactory;
-
+public class PaysService extends AbstractService {
     public PaysService() {
-        this.sessionFactory = HibernateClient.getSessionFactory();
+        super();
     }
 
     public void insertPays() {
