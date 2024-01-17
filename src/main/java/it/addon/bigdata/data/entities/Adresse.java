@@ -13,14 +13,14 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class Adresse {
     // @Column(name = "region") => implicit
-    String region;
+    private String region;
 
     @Column(name = "code_postal")
-    String codePostal;
+    private String codePostal;
 
-    String ville;
+    private String ville;
 
-    String rue1;
+    private String rue1;
 
-    String rue2;
+    private String rue2;
 }

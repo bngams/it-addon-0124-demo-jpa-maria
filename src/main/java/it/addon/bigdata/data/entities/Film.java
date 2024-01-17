@@ -3,6 +3,7 @@ package it.addon.bigdata.data.entities;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -11,10 +12,11 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "Film")
 public class Film {
-
+    @EqualsAndHashCode.Include
     @Id
     private Integer id;
 

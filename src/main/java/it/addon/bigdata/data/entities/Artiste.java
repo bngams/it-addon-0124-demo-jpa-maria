@@ -1,9 +1,7 @@
 package it.addon.bigdata.data.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,9 +9,11 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name="Artiste")
 public class Artiste {
+    @EqualsAndHashCode.Include
     @Id
     private Integer id;
 
@@ -26,10 +26,9 @@ public class Artiste {
     @Column(name="annee_naissance")
     private Integer anneeNaissance;
 
-    /*
     @OneToMany(targetEntity = Film.class, mappedBy = "realisateur")
     private List<Film> filmsRealises;
-     */
+
 
     // @ManyToMany(mappedBy = "acteurs")
     /* @ManyToMany
@@ -37,4 +36,19 @@ public class Artiste {
             joinColumns = @JoinColumn(name="id_acteur"),
             inverseJoinColumns = @JoinColumn(name = "id_film"))
     private List<Film> filmsJoues;*/
+
+    @Override
+    public String toString() {
+        String films = "";
+        for (Film film : filmsRealises) {
+            films += film.getId() + " " + film.getTitre() + ";";
+        }
+        return "Artiste{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", anneeNaissance=" + anneeNaissance +
+                ", filmsRealises=" + films +
+                '}';
+    }
 }
